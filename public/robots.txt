@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://attiqa420.github.io/CSM-Vita-Clone
