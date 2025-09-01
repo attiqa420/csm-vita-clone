@@ -8,5 +8,4 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-    base: '/CSM-Vita-Clone/',
 })
