@@ -148,7 +148,11 @@ useEffect(() => {
             </div>
           </div>
         </div>
-         <button className='object-top-right border border-white p-1.5 text-white hover:bg-blue-900'>Login to CSM</button>
+         <button className='object-top-right border border-white p-1.5 text-white hover:bg-blue-900 hover:cursor-pointer'>
+          <NavLink to="/login" target='_blank'>
+          Login to CSM
+          </NavLink>
+          </button>
       </div>
 
     </nav>

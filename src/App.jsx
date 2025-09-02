@@ -6,6 +6,7 @@ import Premium from './pages/Premium';
 import About from './pages/About';
 import ErrorPage from './pages/ErrorPage';
 import AppLayout from './Layout/AppLayout';
+import Login from './pages/Login';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
   <Route path="/pricing/premium" element = {<Premium />} />
   <Route path="/about/contact" element = {<About />} />
   </Route>
+
+    <Route path="/login" element = {<Login />} />
     <Route path="*" element={<ErrorPage />} />
     </Routes>
     
