@@ -1,8 +1,13 @@
 import React from 'react'
 import Pricing from './Pricing'
 import bg from '../assets/images/bg1.webp'
+import { useLocation } from 'react-router-dom'
 
 function Banner({title, subtitle, description}) {
+
+  const location = useLocation();
+  const isHome = location.pathname == '/';
+
   return (
    <div className="w-full overflow-hidden bg-cover bg-center"
    style={{backgroundImage: `url(${bg})`}}
@@ -20,9 +25,11 @@ function Banner({title, subtitle, description}) {
           </p>
         </div>
 
-        <div className="pb-6 w-full">
+       {
+       isHome ? (<div className="pb-6 w-full">
        <Pricing />
-        </div>
+        </div>) : null 
+        }
       </div>
     </div>
   )

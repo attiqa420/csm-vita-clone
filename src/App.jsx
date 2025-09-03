@@ -7,6 +7,7 @@ import About from './pages/About';
 import ErrorPage from './pages/ErrorPage';
 import AppLayout from './Layout/AppLayout';
 import Login from './pages/Login';
+import ISP from './pages/complaince/ISP';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
  
     <Routes>
       <Route element={<AppLayout />}>
-   <Route path="/" element={<Home />} />   
+   <Route path="/" element={<Home />} />  
+   <Route path="/complaince/information" element={<ISP />} /> 
    <Route path="/pricing/basic" element={<Basic />} />
    <Route path="/pricing/standard" element={<Standard />} />
   <Route path="/pricing/premium" element = {<Premium />} />

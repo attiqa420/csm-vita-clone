@@ -2,8 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import React, { useState, useEffect } from 'react';
 
-import logo from '../assets/images/logo-white.webp'
-import bg from '../assets/images/bg1.webp';
+import logo from '../assets/images/logo-white.webp';
 import { Helmet } from 'react-helmet';
 
 function NavBar()
@@ -22,7 +21,7 @@ useEffect(() => {
 
   return (
 
-    <nav   className={`p-6 pb-3 w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
+    <nav   className={`p-6 pb-3 w-full fixed top-0 left-0   duration-300 ${
         scrolled ? 'bg-blue-950 bg-opacity-95' : 'bg-transparent'
       }`}
      >
@@ -52,8 +51,8 @@ useEffect(() => {
 
  <>
    <div
-    className='md:hidden flex flex-col mt-1 text-white bg-cover bg-center'
-      style={{backgroundImage: `url(${bg})`}}
+    className='md:hidden flex flex-col mt-1 text-white bg-cover bg-center bg-blue-950'
+     
    
     onClick={(e) => {
     
